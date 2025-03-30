@@ -9,9 +9,6 @@ class AddressBook(UserDict):
     def add_record(self, record: Record):
         self.data[record.name.value] = record
 
-    # def find(self, name):
-    #     return self.data.get(name)
-
     def find(self, name: str):
         return self.data.get(name, None)
 
